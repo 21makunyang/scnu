@@ -1,0 +1,5 @@
+6 12
+this->id = a.id;
+    this->name = new char[strlen(a.name)+1];
+    if(this->name!=nullptr) strcpy(this->name,a.name);
+    this->account=a.account;
