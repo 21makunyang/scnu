@@ -10,7 +10,7 @@ void threadObj(int n,int m)
 
 int main()
 {
-    thread th1(threadObj,3,3);
+    thread th1(threadObj,3);
     th1.join();
     return 0;
 }
