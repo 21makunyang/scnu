@@ -39,12 +39,12 @@ void pause()//用于linux环境下暂停程序和清屏，使用户界面更清�
     system("clear");
     return;
 }
-int calculator::display(){//游戏模式下展示当前等级和经验
+int Calculator::display(){//游戏模式下展示当前等级和经验
     printf("当前您的等级：%d\n",level);
     printf("升级还需经验：%d\n",(level+1)-exp);
     return 1;
 }
-char calculator::createSign(int tem) //传入一个随机数tem来生成符号
+char Calculator::createSign(int tem) //传入一个随机数tem来生成符号
 {
     if(tem==0) return '+'; //等于0，则为“+”号
     if(tem==1) return '-'; //等于1，则为“-”号
@@ -52,13 +52,13 @@ char calculator::createSign(int tem) //传入一个随机数tem来生成符号
     if(tem==3) return '/'; //等于3，则为“/”号
     return ' ';
 }
-int calculator::print(int a,int b)//传入两个参数，a和b进行格式化打印
+int Calculator::print(int a,int b)//传入两个参数，a和b进行格式化打印
 {
     if(b<0) printf("%d %c (%d) =",a,createSign(symbol),b);//若b为负数则加上括号打印
     else printf("%d %c %d =",a,createSign(symbol),b);//若b不是负数则直接输出
     return 1;
 }
-int calculator::topic() //生成题目，返回正确答案ans
+int Calculator::topic() //生成题目，返回正确答案ans
 {
     re2:
     int a=rand()%1000*pow(-1,rand()%2); //生成运算数 -999~999
@@ -84,14 +84,14 @@ int calculator::topic() //生成题目，返回正确答案ans
     }
     return ans;
 }
-bool calculator::judge() //判断答案是否正确，正确返回true，否则返回false
+bool Calculator::judge() //判断答案是否正确，正确返回true，否则返回false
 {
     int ans=topic();
     int ansOfStu;
     ansOfStu=getNum();
     return (ans==ansOfStu);
 }
-int calculator::mode2()//简单练习模式
+int Calculator::mode2()//简单练习模式
 {
     if(judge())
     {
@@ -103,7 +103,7 @@ int calculator::mode2()//简单练习模式
     cout<<'\n';
     return 1;
 }
-int calculator::mode1() //游戏模式
+int Calculator::mode1() //游戏模式
 {
     display();
     if(judge()) //答案正确则获得经验：加法1点，减法2点，乘法3点，除法4点，错误则没有
@@ -130,7 +130,7 @@ int calculator::mode1() //游戏模式
     printf("\n距离升级还需经验：%d\n",(level+1)*2-exp);
     return 1;
 }
-int calculator::mode2Plus() //四则运算，执行成功返回1
+int Calculator::mode2Plus() //四则运算，执行成功返回1
 {
     int number=rand()%1000*pow(-1,rand()%2); //生成运算数 -999~999
     stack<int> oper;  //用于计算，先算乘除，后算加减

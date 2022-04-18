@@ -1,3 +1,5 @@
+#ifndef _Calculator_h_
+#define _Calculator_h_ 1
 class Calculator
 {
 private:
@@ -5,7 +7,6 @@ private:
     int exp;
 public:
     int symbol;
-    Calculator();
     Calculator(){
         level=0;
         exp=0;
@@ -22,3 +23,4 @@ public:
 char getCommand(char,char);
 int getNum();
 void pause();
+#endif

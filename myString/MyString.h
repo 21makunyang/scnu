@@ -1,3 +1,6 @@
+#ifndef _MyString_h_
+#define _MyString_h_ 1
+
 #include <cstddef>
 class MyString
 {
@@ -22,3 +25,4 @@ class MyString
         void showMyString(); //输出字符串到屏幕
         void Swap(MyString& s1,MyString& s2);//交换两个字符串
 };
+#endif
