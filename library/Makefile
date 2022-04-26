@@ -1,5 +1,5 @@
-library:library.o Book.o BDatabase.o RDatabase.o Reader.o
-	g++ -c library.o Book.o BDatabase.o RDatabase.o Reader.o
+library:library.o Book.o BDatabase.o RDatabase.o Reader.o 
+	g++ library.o Book.o BDatabase.o RDatabase.o Reader.o -o library
 library.o:library.cpp Book.h BDatabase.h RDatabase.h Reader.h
 	g++ -c library.cpp Book.h BDatabase.h RDatabase.h Reader.h
 Book.o:Book.cpp Book.h

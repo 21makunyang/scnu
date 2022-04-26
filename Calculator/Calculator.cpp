@@ -2,6 +2,7 @@
 #include <vector>
 #include <stack>
 #include <cmath>
+#include <string>
 #include "Calculator.h"
 using namespace std;
 
@@ -19,22 +20,66 @@ char getCommand(char left,char right)
     return command;
 }
 int getNum()
-{/*进行输入合法性判断，若不是数字则重新输入，返回合法数字*/
-    char num;
-    while(1){
+{/*进行输入合法性判断，若不是数字则重新输入，返回合法数字,数字过大会溢出*/
+    string num;
+    bool isNeg = 0,isNum = 1;
+    int i, n, ansOfStu = 0, tem = 1;
+    while(1){ 
         cin>>num;
-        if(isdigit(num))
+        n = num.length();
+        if(num[0] == '-')
         {
-            break;
+            isNeg = 1;
+            isNum = 1;
+            for(i=1; i<n; i++)
+            {
+                if( !isdigit(num[i]) ) 
+                {
+                    isNum = 0;
+                    cout<<"输入非指定数字，请重新输入"<<'\n';
+                    break;
+                }
+            }
+            if(isNum) break;
         }
-        else cout<<"输入非指定数字，请重新输入"<<'\n';
+        else
+        {
+            isNeg = 0;
+            isNum = 1;
+            for(i=0; i<n; i++)
+            {
+                if( !isdigit(num[i]) ) 
+                {
+                    isNum = 0;
+                    cout<<"输入非指定数字，请重新输入"<<'\n';
+                    break;
+                }
+            }
+            if(isNum) break;
+        }
     }
-    return num-'0';
+    if(isNeg == 1)
+    {
+        for(i = n-1; i>0; i--)
+        {
+            ansOfStu += tem*(num[i]-'0');
+            tem *= 10;
+        }
+        // cout<<ansOfStu<<'\n';
+        return -ansOfStu;
+    }
+    for(i = n-1; i >= 0; i--)
+    {
+        ansOfStu += tem*(num[i]-'0');
+        tem *= 10;
+    }
+    // cout<<ansOfStu<<'\n';
+    return ansOfStu;
 }
 void pause()//用于linux环境下暂停程序和清屏，使用户界面更清晰
 {
-    cout<<"请按回车键继续..."<<'\n';
     cin.get();
+    cout<<"请按回车键继续..."<<endl;
     cin.get();
     system("clear");
     return;
@@ -110,8 +155,8 @@ int Calculator::mode1() //游戏模式
     {
         cout<<"correct!\n";
         cout<<"获得经验："<<symbol+1<<'\n';
-        pause();
         exp+=symbol+1;
+        pause();
     }
     else{
         cout<<"wrong,try again~\n";
@@ -127,7 +172,7 @@ int Calculator::mode1() //游戏模式
         cout<<"恭喜升级!\n";
         cout<<"当前等级："<<level<<'\n';
     }
-    printf("\n距离升级还需经验：%d\n",(level+1)*2-exp);
+    printf("距离升级还需经验：%d\n",(level+1)*2-exp);
     return 1;
 }
 int Calculator::mode2Plus() //四则运算，执行成功返回1

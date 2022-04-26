@@ -8,7 +8,7 @@ BDatabase::BDatabase()
 	Book s;
 	top=-1;
 	fstream file;
-	file.open("book.dat",ios::in);
+	file.open("book.dat",ios::in|ios::binary);
 	while(1)
 	{
 		file.read((char*)&s,sizeof(s));
