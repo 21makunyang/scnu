@@ -1,11 +1,11 @@
-company:company.o Employee.o MainAger.o SalesMan.o SalesManager.o Technician.o 
-	g++ company.o MainAger.o SalesManager.o Technician.o Employee.o -o company
-company.o:company.cpp MainAger.h SalesMan.h SalesManager.h Technician.h Employee.h
-	g++ -c company.cpp MainAger.h SalesManager.h Technician.h Employee.h
+company:company.o Employee.o Manager.o SalesMan.o SalesManager.o Technician.o 
+	g++ company.o Manager.o SalesMan.o SalesManager.o Technician.o Employee.o -o company
+company.o:company.cpp Manager.h SalesMan.h SalesManager.h Technician.h Employee.h
+	g++ -c company.cpp Manager.h SalesManager.h Technician.h Employee.h
 Employee.o:Employee.cpp Employee.h
 	g++ -c Employee.cpp Employee.h
-MainAger.o:MainAger.cpp MainAger.h
-	g++ -c MainAger.cpp MainAger.h
+Manager.o:Manager.cpp Manager.h
+	g++ -c Manager.cpp Manager.h
 SalesMan.o:SalesMan.cpp SalesMan.h
 	g++ -c SalesMan.cpp SalesMan.h
 SalesManager.o:SalesManager.cpp SalesManager.h
@@ -13,4 +13,4 @@ SalesManager.o:SalesManager.cpp SalesManager.h
 Technician.o:Technician.cpp Technician.h
 	g++ -c Technician.cpp Technician.h
 clean:
-	rm -f company company.o MainAger.o SalesManager.o Technician.o Employee.o
+	rm -f company company.o Manager.o SalesManager.o Technician.o Employee.o

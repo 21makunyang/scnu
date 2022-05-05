@@ -2,6 +2,8 @@
 #define _SALESMAN_H_
 
 #include "Employee.h"
+#include <string>
+using namespace std;
 class SalesMan: public Employee
 {
     public:

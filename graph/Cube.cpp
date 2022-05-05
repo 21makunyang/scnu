@@ -4,14 +4,29 @@ Cube::Cube(){}
 
 Cube::~Cube(){}
 
-Cube::Cube(float height, float sideLength):Graph(height,sideLength){}
-
-float Cube::getArea()
+Cube::Cube(float sideLength):Graph(sideLength)
 {
-    return sideLength * sideLength * 6;
+    this->sideLength = sideLength;
 }
 
-float Cube::getVolumn()
+Cube::Cube(float sideLength, float height):Graph(height)
+{
+    this->sideLength = sideLength;
+}
+
+float Cube::getArea() const
+{
+    return sideLength * sideLength * 2 + sideLength * height * 4;
+}
+
+float Cube::getVolumn() const
 {
     return sideLength * sideLength * height;
+}
+
+ostream & operator<<(ostream& output, const Cube& obj)
+{
+    output<<"长方体表面积为:"<<obj.getArea()<<'\n';
+    output<<"长方体体积为:"<<obj.getVolumn()<<'\n';
+    return output;
 }

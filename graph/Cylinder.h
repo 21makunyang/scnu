@@ -3,19 +3,22 @@
 
 #include "Graph.h"
 #include <cstddef>
-class Cylinder:public Graph
+#include <iostream>
+using namespace std;
+class Cylinder : public Graph
 {
-    public:
-        static const float PI;
-        Cylinder();
-        Cylinder(float height, float radius,float sideLength);
-        ~Cylinder();
-    private:
-        float radius;
-    public:
-        float getArea();
-        float getVolumn();
-};
+public:
+    static const float PI;
+    Cylinder();
+    Cylinder(float height, float radius);
+    ~Cylinder();
 
+private:
+    float radius;
+public:
+    float getArea() const;
+    float getVolumn() const;
+    friend ostream& operator<<(ostream& output,const Cylinder& obj);
+};
 
 #endif

@@ -5,16 +5,14 @@ class Graph
 {
     public:
         Graph();
-        Graph(float sideLength, float height);
+        Graph(float height);
         ~Graph();
     protected:
-        float sideLength;
         float height;
     public:
-        float getSideLength(){ return sideLength; };
         float getHeight(){ return height;};
-        virtual float getArea() = 0;
-        virtual float getVolumn() = 0;
+        virtual float getArea() const = 0;
+        virtual float getVolumn() const = 0;
 };
 
 
