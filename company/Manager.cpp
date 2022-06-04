@@ -2,7 +2,7 @@
 
 float Manager::makeSalary()
 {
-    return 8000;
+    return 800;
 }
 Manager::Manager()
 {

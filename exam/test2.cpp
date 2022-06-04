@@ -18,23 +18,39 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+#include <vector>
 
+class A{
+
+};
 int main()
 {
-    int N,M,i,j,count=0;
-    cin>>N>>M;
-    int nums[N];
-    for(i=0;i<N;i++) cin>>nums[i];
-    for(i=0;i<N-1;i++)
+    // int N,M,i,j,count=0;
+    // cin>>N>>M;
+    // int nums[N];
+    int* a = new int[10];
+    int*last = a +10;
+    for(int i= 0;i<10;i++ )
     {
-        for(j=i+1;j<N;j++)
-        {
-            if(nums[i] + nums[j] == M)
-            {
-                count++;
-            }
-        }
+        cin>>a[i];
     }
-    cout<<count<<'\n';
+    sort(a,last);
+    for(int* i= a;i!=last;i++ )
+    {
+        cout<<*i<<'\n';
+    }
+    
+    // for(i=0;i<N;i++) cin>>nums[i];
+    // for(i=0;i<N-1;i++)
+    // {
+    //     for(j=i+1;j<N;j++)
+    //     {
+    //         if(nums[i] + nums[j] == M)
+    //         {
+    //             count++;
+    //         }
+    //     }
+    // }
+    // cout<<count<<'\n';
     return 0;
 }
