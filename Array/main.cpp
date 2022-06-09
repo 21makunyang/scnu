@@ -13,7 +13,7 @@ int main()
 	Array<int> intArr;
 	Array<bool> boolArr;
 	Array<float> floatArr;
-	void *arr = nullptr;
+	//void *arr = nullptr;
 	while (1) {
 		int oper;
 		cout << "*------------------------------------------* \n";

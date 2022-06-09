@@ -226,11 +226,11 @@ T Array<T>::at(unsigned int index)
 }
 
 template<typename T>
-bool Array<T>::find(T taeget)
+bool Array<T>::find(T target)
 {
 	for(unsigned int i = 0;i<this->len;i++)
 	{
-		if(this->myfirst[i] == taeget)
+		if(this->myfirst[i] == target)
 		{
 			cout<<"查找元素下标为："<<i<<'\n';
 			return 1;

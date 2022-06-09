@@ -17,16 +17,16 @@ private:
 	unsigned int len;
 
 public:
-	bool push_back(value_name value);
+	bool push_back(value_name value);//输入
 	iterator begin() { return myfirst; };
 	iterator end() { return mylast; };
 	Array<value_name>& operator=(Array<value_name>& obj);
 	bool mySort();
 	bool showAll();
-	void insert(unsigned int index,T value);
-	T at(unsigned int index);
-	bool find(T taeget);
-	void erase(unsigned int index);
+	void insert(unsigned int index,T value); //插入index位置，值为value
+	T at(unsigned int index); //输出index位置元素
+	bool find(T target); //查找
+	void erase(unsigned int index);//删除
 };
 template<typename T>
 inline int create(int & , Array<T>&);
