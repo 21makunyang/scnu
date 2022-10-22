@@ -1,40 +1,46 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include <fstream>
+
 using namespace std;
-class Solution{
-public:
-    /*判断每个字符属于0-9还是a-z*/
-	char getChar(int n){
-		if(n <= 9) return n+'0';
-		else return n-10+'a';
-	}
-	
-	int getInt(char ch){
-		if('0' <= ch && ch <= '9') return ch - '0';
-		else return ch - 'a' + 10;
-	}
-	
-	string add36Strings(string num1, string num2){
-		int carry = 0;
-		int i = num1.size()-1, j = num2.size()-1;
-		string res;
-		while(i>=0 || j>=0 || carry){
-            // 这里使用三目运算符，可以减少运行时间
-			int x = i >= 0 ? getInt(num1[i]) : 0;
-			int y = j >= 0 ? getInt(num2[j]) : 0;
-			int sum = x + y + carry;
-			res += getChar(sum%36);
-			carry = sum/36;
-			i--,j--;
-		}
-		reverse(res.begin(),res.end());
-		return res;  
-	}
-};
- 
-int main ()
+
+int main()
 {
-	Solution s;
-	string a = "b", b = "x", c;
-	c = s.add36Strings(a,b);
-	cout << c << endl;
+	ofstream outfile("data1.txt", ios::out|ios::binary);
+	for(float i = 0; i<10; i++)
+	{
+		outfile.write((char*)&i,sizeof(float));
+	}
+	outfile.close();
+	ifstream infile("data1.txt", ios::in|ios::binary);
+
+	float nums[10];
+	infile.read((char*)&nums[0],sizeof(int));
+	float max = nums[0], min = nums[0], sum = nums[0];
+
+	for (int i = 1; i < 10; i++)
+	{
+		infile.read((char*)&nums[i],sizeof(float));
+		if (max < nums[i]) max = nums[i];
+		if (min > nums[i]) min = nums[i];
+		sum += nums[i];
+	}
+	infile.close();
+
+	outfile.open("data1.txt", ios::app|ios::binary);
+	outfile.write((char*)&max,sizeof(float));
+	outfile.write((char*)&min,sizeof(float));
+	outfile.write((char*)&sum,sizeof(float));
+	outfile.close();
+
+	infile.open("data1.txt", ios::in|ios::binary);
+	outfile.open("data2.txt", ios::out|ios::binary);
+	float input= 0;
+	double n=0;
+	while (infile.read((char*)&input,sizeof(float)))
+	{
+		outfile.write((char*)&input,sizeof(float));
+	}
+	outfile.close();
+	infile.close();
+	return 0;
 }

@@ -1,0 +1,2295 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 01 Aug 2022 06:28:39 GMT
+Content-Type: text/html
+Content-Length: 126850
+Last-Modified: Mon, 01 Aug 2022 03:20:15 GMT
+Connection: close
+ETag: "62e7466f-1ef82"
+X-Content-Type-Options:: nosniff
+X-XSS-Protection:: 1
+X-XSS-Protection:: mode=block
+X-Frame-Options:: SAMEORIGIN
+Accept-Ranges: bytes
+
+
+  <!DOCTYPE HTML>
+  <html lang="zh-CN">
+
+  <head>
+    <!-- 全站公共资源页面，用于定义统一的页面头部声明、全局样式、全局JavaScript变量 -->
+
+
+
+
+<meta content="广州市气象台,广州气象,广州天气,tqyb,广州气象网站" name="keywords">
+<meta content="广州天气是广州市气象局的官方业务网站，为您提供权威、及时、准确的广州天气预报、网格精细化预报、天气预警、天气实况、雷达回波图、卫星云图、台风路径、广州气候等信息服务" name="description">
+<meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="refresh" content="300">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+<meta name="baidu-site-verification" content="5IUrE5FoJX">
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'; style-src cdn.example.org third-party.org; child-src https:">
+ --><!--verification5IUrE5FoJX-->
+<link rel="shortcut icon" href="http://www.tqyb.com.cn/favion.ico">
+<link rel="stylesheet" href="/designs/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="/designs/css/column.css" type="text/css" media="all">
+<script type="text/javascript">
+var DATA_PATH = '/data/';
+var WEB_ROOT = '/';
+var WEB_PAGE_ROOT = '/';
+var AREA_CODE = {
+		"GDHX":["huadu","花都区"],
+		"GDCO":["conghua","从化区"],
+		"GDZC":["zengcheng","增城区"],
+		"GDPY":["panyu","番禺区"],
+		"GDHH":["haizhu","海珠区"],
+		"GDLW":["liwan","荔湾区"],
+		"GDYX":["yuexiu","越秀区"],
+		"GDTH":["tianhe","天河区"],
+		"GDNS":["nansha","南沙区"],
+		"GDBY":["baiyun","白云区"],
+		"GDHU":["huangpu","黄埔区"],
+		"BCGZ":["guagnzhou","广州市"],
+		"花都区":["huadu","GDHX"],
+		"从化区":["conghua","GDCO"],
+		"增城区":["zengcheng","GDZC"],
+		"番禺区":["panyu","GDPY"],
+		"海珠区":["haizhu","GDHH"],
+		"荔湾区":["liwan","GDLW"],
+		"越秀区":["yuexiu","GDYX"],
+		"天河区":["tianhe","GDTH"],
+		"南沙区":["nansha","GDNS"],
+		"白云区":["baiyun","GDBY"],
+		"黄埔区":["huangpu","GDHU"],
+		"广州市":["guagnzhou","BCGZ"]
+		};
+</script>
+      <title>广州天气-广州市气象台,tqyb</title>
+      <link rel="stylesheet" href="/designs/css/home.css" type="text/css" media="all">
+
+      <link rel="stylesheet" href="/designs/css/modules/gzWaveWindow.css" type="text/css" media="all">
+
+      <script type="text/javascript" src="/designs/js/require.js" data-main="/designs/js/index.js"
+        data-modules="jquery,gControl,pHome,forecast24h,vanwins,shorttime,gzshi_obtAreaRep,nowTimes,climateStatic"></script>
+
+      <script type="text/javascript">
+        function tabs (n) {
+          var len = 2;
+          for (var i = 1; i <= len; i++) {
+            document.getElementById('tab_a' + i).style.display = (i == n) ? 'block' : 'none';
+            document.getElementById('tab_' + i).className = (i == n) ? 'aaa' : 'none';
+          }
+        }
+        var areaname = "BCGZ";
+      </script>
+
+  </head>
+
+  <body>
+    <!--顶部当前时间  -- 开始-->
+    <div class="wrapper" id="head-secondary">
+      <div class="wrapper-container">
+        <div class="datetimes">加载中...</div>
+        <div id="nav-secondary">
+          <a href="http://tqyb.com.cn/en/"><span>English</span></a>
+          <a href="http://tqyb.com.cn/xxfw/"><span>街镇服务网</span></a>
+          <a href="http://tqyb.com.cn/sqfw/"><span>社区服务网</span></a>
+          <a href="http://tqyb.com.cn/pda/"><span>PDA版</span></a>
+          <a href="http://gd.cma.gov.cn/gzsqxj/"><span>政务网</span></a>
+        </div>
+        <div class="tips">特别说明：本网站预报预警信息由广州市气象台发布</div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--顶部当前时间  -- 结束-->
+
+    <!--头部 开始-->
+    
+
+  <div class="wrapper head-wrap">
+    <!--logo 开始 -->
+    <div class="wrapper-container">
+      <div class="head">
+        <div class="logo"></div>
+      </div>
+    </div>
+    <!--logo  结束-->
+
+    <!--广州各区 -- 开始-->
+
+    <div class="area-betton">
+      <div class="areas"><a href="/gzpanyu" target="_Blank">番禺区</a></div>
+      <div class="areas"><a href="/gzhaizhu" target="_Blank">海珠区</a></div>
+      <div class="areas"><a href="/huangpu" target="_Blank">黄埔区</a></div>
+      <div class="areas"><a href="/gzhuadu" target="_Blank">花都区</a></div>
+      <div class="areas"><a href="/nansha" target="_Blank">南沙区</a></div>
+      <div class="areas"><a href="/conghua" target="_Blank">从化区</a></div>
+      <div class="areas"><a href="/zengcheng" target="_Blank">增城区</a></div>
+      <div class="areas"><a href="/baiyun" target="_Blank">白云区</a></div>
+      <div class="areas"><a href="/gzliwan" target="_Blank">荔湾区</a></div>
+    </div>
+    <!--广州各区 -- 结束-->
+  </div>
+
+
+  <!--栏目导航 开始-->
+  <div class="wrapper" id="column-nav">
+    <div class="wrapper-container" id="nav">
+      <ul>
+        <li class="topnav-wrap"><a href="/"><span>首 页</span></a></li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/weatherAlarm/otherCity/"><span>天气预警</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/weatherAlarm/suddenWeather/">突发性天气提示</a></li>
+            <!--<li><a href="/gz/weatherAlarm/">广州市预警信号</a></li>-->
+            <li><a href="/gz/weatherAlarm/winball/">广州港风球信号</a></li>
+            <li><a href="/gz/weatherAlarm/otherCity/">省内城市预警</a></li>
+            <li><a href="/gz/weatherAlarm/rules/">预警发布规定</a></li>
+            <li><a href="/gz/weatherAlarm/guide/">预警防御指引</a></li>
+            <li><a href="/gz/weatherAlarm/history/">预警历史查询</a></li>
+          </ul>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/weatherForecast/shortTime"><span>天气预报</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/weatherForecast/report/">每日天气分析</a></li>
+            <li><a href="/gz/weatherForecast/commute/">上班下班天气</a></li>
+            <li><a href="/gz/weatherForecast/shortTime/">短时天气预报</a></li>
+            <li><a href="/gz/weatherForecast/tenForecast/">十天天气展望</a></li>
+            <li><a href="/gz/weatherForecast/centerCity">市区天气预报</a></li>
+            <li><a href="/gz/weatherForecast/streetForecast">镇街天气预报</a></li>
+            <li><a href="/gz/weatherForecast/regions/">分区七天天气</a></li>
+            <li><a href="/gz/weatherForecast/life/">生活气象指数</a></li>
+            <li><a href="/gz/weatherForecast/provinceCity/">省内城市天气</a></li>
+            <li><a href="/gz/weatherForecast/domesticCity/">国内城市天气</a></li>
+          </ul>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/weatherLive/autoStation/"><span>天气实况</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/weatherLive/tqgc">天气过程实况</a></li>
+            <li><a href="/gz/weatherLive/autoStation/">分区站点实况</a></li>
+            <li><a href="/gz/weatherLive/nationStation/">回南天站实况</a></li>
+            <li><a href="/gz/weatherLive/distribution/">广州观测实况</a></li>
+            <li><a href="/gz/weatherLive/liveAction/">市区天气实景</a></li>
+            <li><a href="/gz/weatherLive/ultraviolet/">紫外线实况图</a></li>
+            <li><a href="/gz/weatherLive/radar/">天气雷达回波</a></li>
+            <li><a href="/gz/weatherLive/cloudPicture/">气象卫星云图</a></li>
+            <li><a href="/gz/weatherLive/typhoon/">台风路径图</a></li>
+          </ul>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/locationweather/"><span>位置天气</span></a>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/myday/"><span>个人定制</span></a>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/departments/"><span>专项预报</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/departments/">污染气象条件</a></li>
+            <li><a href="/gz/departments/aqi/">空气质量预报</a></li>
+            <li><a href="/gz/departments/agriculture/">农业气象服务</a></li>
+            <li><a href="/gz/departments/forestFire/">森林火险预报</a></li>
+            <li><a href="/gz/departments/geologic/">地质灾害预警</a></li>
+            <li><a href="/gz/departments/waterlogging/">城市内涝预警</a></li>
+            <li><a href="/gz/departments/travel/">广州景点天气</a></li>
+            <li><a href="/gz/departments/subway/">地铁天气预报</a></li>
+            <li><a href="/gz/departments/typhoon/">台风专题服务</a></li>
+            <li><a href="/gz/departments/silkRoad/">海上丝绸之路</a></li>
+            <li><a href="/gz/departments/school_home/">广州校园天气</a></li>
+          </ul>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/climaticprediction/"><span>气候服务</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/climaticprediction/prediction/">气候趋势预测</a></li>
+            <li><a href="/gz/climaticprediction/appraise/">气候影响评价</a></li>
+            <li><a href="/gz/climaticprediction/monitor/">气候监测快报</a></li>
+            <li><a href="/gz/climaticprediction/islandmonitoring/">热岛监测公报</a></li>
+            <li><a href="/gz/climaticprediction/bulletin/">年度气候公报</a></li>
+            <li><a href="/gz/climaticprediction/static">30年气候统计</a></li>
+          </ul>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/qxyx/"><span>影响服务</span></a>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/science/"><span>气象科普</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/science/consult/">气象资讯</a></li>
+            <li><a href="/gz/science/sciencebase">网上科普馆</a></li>
+            <li><a href="/gz/science/xjt">气象小讲堂</a></li>
+          </ul>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/tvweather/"><span>电视天气</span></a>
+        </li>
+        <li class="topnav-wrap">
+          <a class="topnav" href="/gz/about/"><span>关于我们</span></a>
+          <ul class="subnav navigation" style="display: none;">
+            <li><a href="/gz/about/">联系我们</a></li>
+            <li><a href="/gz/about/sitemap/">网站地图</a></li>
+            <li><a href="/gz/about/copyright/">版权声明</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--栏目导航 结束-->
+      <!--头部 结束-->
+      <div class="content-container">
+        <div class="wrapper" id="column00">
+          <div class="wrapper-container">
+            <div class="clear"></div>
+            <!--搜索框 开始 -->
+            <div class="serch-bar">
+              <div class="news">
+                <div class="news-img"><img src="/designs/images/modules/news.png" /></div>
+                <div id="sie8" style="display:none"><a>--</a><span>--</span></div>
+                <div id="latest24HF"></div>
+              </div>
+              <!-- <ul class="zt">
+			<li><a href="http://www.tqyb.com.cn/zhuanti/cy2016/" target="_blank"><marquee tag="2017" direction="left" width="300" style="width: 300px;">广州天气春运及花市服务专题</marquee></a></li>
+		</ul> -->
+              <div class="serch-wrap">
+                <input type="text" id="kw" maxlength="30" size="35" name="word" value="分区、街镇、景点"
+                  onfocus="if(value=='分区、街镇、景点') {value=''}" onblur="if (value=='') {value='分区、街镇、景点'}">
+                <div id="serch">查天气</div>
+              </div>
+
+            </div>
+            <div class="clear"></div>
+            <!--搜索框 结束 -->
+            <!--预警信号 开始-->
+            <div id="alarm-module" class="module">
+              <div class="this-module">
+                <div class="module-head">
+                  <ul class="module-head-ul" data-change-group="top00">
+                    <li class="selected" data-iter="1">24小时预报</li>
+                    <li class="warning-signal" data-iter="2">预警信号</li>
+                    <li class="ball-signal" data-iter="3">风球信号</li>
+                  </ul>
+                </div>
+                <div class="module-cont">
+                  <ul class="module-cont-ul" data-change-group="top00">
+                    <li class="selected" data-iter="1">
+                      <div class="area-table area-img">
+                        <ul id="forecast24h">
+                          <li data-code="GDYX">
+                            <div class="area-name">越秀区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDHH">
+                            <div class="area-name">海珠区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDTH">
+                            <div class="area-name">天河区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDBY">
+                            <div class="area-name">白云区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDHU">
+                            <div class="area-name">黄埔区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDLW">
+                            <div class="area-name">荔湾区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDNS">
+                            <div class="area-name">南沙区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDHX">
+                            <div class="area-name">花都区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDPY">
+                            <div class="area-name">番禺区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDCO">
+                            <div class="area-name">从化区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li data-code="GDZC">
+                            <div class="area-name">增城区</div><img class="area-wicon"
+                              src="/designs/images/modules/sun.png">
+                            <div class="area-temp">--</div>
+                          </li>
+                          <li>
+                            <div class="area-weather-date">--气象台<br />--年--月--日发布</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li data-iter="2" class="warning-signal">
+                      <!-- begin有预警列表和地图显示 -->
+                      <div class="module-none">
+                        <ul class="alarmshow-tab" style="height: 33px;border-bottom: #c8c8c8 1px dashed;">
+                          <li id="tab_1" class="aaa" onmouseover="tabs('1');">列表</li>
+                          <li> | </li>
+                          <li id="tab_2" onmouseover="tabs('2');">地图</li>
+                          <li style="float:right; font-size:12px;"><a
+                              href="/gz/weatherAlarm/">点击查看分镇街预警</a></li>
+                        </ul>
+                        <div class="tab_b" id="tab_a1" style="display:block;">
+                          <div class="alarmicon-ul area-img">
+                            <ul>
+                              <li class="alarmicon-iconlist">
+                                <div class="area-name"></div>
+                                <div class="alarm-icon"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="yuexiu">
+                                <div class="area-name">越秀</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="haizhu">
+                                <div class="area-name">海珠</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="liwan">
+                                <div class="area-name">荔湾</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="tianhe">
+                                <div class="area-name">天河</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="huangpu">
+                                <div class="area-name">黄埔</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="baiyun">
+                                <div class="area-name">白云</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="huadu">
+                                <div class="area-name">花都</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="panyu">
+                                <div class="area-name">番禺</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="nansha">
+                                <div class="area-name">南沙</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="conghua">
+                                <div class="area-name">从化</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                              <li class="alarmicon-area" data-enname="zengcheng">
+                                <div class="area-name">增城</div>
+                                <div class="alarm-date" data-iter="1"></div>
+                                <div class="alarm-date" data-iter="2"></div>
+                                <div class="alarm-date" data-iter="3"></div>
+                                <div class="alarm-date" data-iter="4"></div>
+                                <div class="clear"></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="tab_b" id="tab_a2" style="display:none;">
+                          <ul class="alarmicon-ul">
+                            <li class="alarmicon-iconlist">
+                              <div class="area-name">生效预警</div>
+                              <div class="alarm-icon"></div>
+                            </li>
+                          </ul>
+                          <div class="location-map">
+                            <img class="alarmmap-pic" src="">
+                            <ul class="alarm-ares">
+                              <li class="alarmmap-area" data-enname="yuexiu">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">越秀</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="haizhu">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">海珠</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="liwan">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">荔湾</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="tianhe">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">天河</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="huangpu">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">黄埔</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="baiyun">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">白云</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="huadu">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">花都</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="panyu">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">番禺</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="nansha">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">南沙</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="conghua">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">从化</div>
+                              </li>
+                              <li class="alarmmap-area" data-enname="zengcheng">
+                                <div class="alarm-col"></div>
+                                <div class="area-name">增城</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end有预警列表和地图显示 -->
+
+                      <!-- begin无预警显示 -->
+                      <div style="display: none;">
+                        <div>
+                          <ul class="alarmicon-ul" style="height: 33px;border-bottom: #c8c8c8 1px dashed;">
+                            <li>列表</li>
+                            <li> | </li>
+                            <li>地图</li>
+                            <li style="float: right;"></li>
+                          </ul>
+                          <ul class="alarmicon-ul alarmicon-ul-ares">
+                            <li>
+                              <div>越秀区</div>
+                              <div>--</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- end无预警显示 -->
+                    </li>
+                    <li data-iter="3" class="ball-signal">
+                      
+<script type="text/javascript">
+	if(areaname=="GDCO"||areaname=="GDHX"){
+		document.write('<div id="fxmap"><img class="monitor-pic" width="300px" height="320px"></div>');
+	}else if(areaname=="BCGZ"){
+		document.write('<a href="/gz/weatherAlarm/winball"><div id="fxmap"><img class="monitor-pic" width="300px" height="320px"></div></a>');		
+	}else{
+		document.write('<a href="/gz/weatherAlarm/winball"><div id="fxmap"><img class="monitor-pic" width="300px" height="320px"></div></a>');
+	}
+	 document.close();
+</script>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--预警信号 结束-->
+            <div class="clear"></div>
+
+
+            <!-- 专题开始 -->
+            <div id="gzzt-module" class="module">
+              <div class="this-module">
+                <div class="module-head">
+                  <div class="gzzt-name">--</div>
+                  <ul class="module-head-ul" data-change-group="top01" style="float:right">
+                    <li data-iter="1" id="zttflj">台风路径图</li>
+                    <li data-iter="2" id="ztwxyt">卫星云图</li>
+                    <li data-iter="3" id="ztzhgc">雷达拼图</li>
+                  </ul>
+                </div>
+
+                <div class="module-cont">
+                  <ul class="module-cont-ul" data-change-group="top01">
+                    <li data-iter="1" id="zttfljimg"><a href="/gz/weatherLive/typhoon"><img id="pic21"
+                          class="monitor-pic"></a></li>
+                    <li data-iter="2" id="ztwxytimg"><a href="/gz/weatherLive/cloudPicture"><img
+                          id="pic22" class="monitor-pic"></a></li>
+                    <li data-iter="3" id="ztzhgcimg"><a href="/gz/weatherLive/radar"><img id="pic23"
+                          class="monitor-pic"></a></li>
+                  </ul>
+                  <div class="zt-cont">
+                    <div class="typhoonjb-cont">
+                      <div class="typhoonjb-title"><a>台风警报</a></div>
+                      <div class="typhoonjb-cont-content"></div>
+                      <div id="typhoonjb-ptime"></div>
+                    </div>
+
+                    <div class="shorttime-cont">
+                      <div class="shorttime-title"><a>短时预报</a><span id="shorttime-ztime"></span></div>
+                      <div class="shorttime-cont-content"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 专题结束 -->
+            <!--国家基本站 开始-->
+            <div id="gzobts-module" class="gzobts-module module">
+              <div class="this-module">
+                <!-- <div class="module-head" style="display: none;">
+				<div class="module-title selected">广州代表站</div>
+			</div> -->
+                <div class="module-cont">
+                  <div id="latesttime" class="modelestyle" style="width: 238px;">--</div>
+                  <div class="temp-wrap">
+                    <div class="temp-mask" style="height: 20.86px;"></div>
+                    <div class="temp-cont">--</div>
+                  </div>
+
+                  <div class="wind-wrap">
+                    <div class="wind"><img id="dnxb"></div>
+                    <div class="windspeed">--</div>
+                    <div class="wind-cont">--</div>
+                  </div>
+                  <div class="rh-wrap">
+                    <div class="rh-mask"><img></div>
+                    <div class="title-t">湿度</div>
+                    <div class="rh-cont" id="shidu">--</div>
+                  </div>
+                  <div class="rain-wrap">
+                    <div class="title-t">小时雨量</div>
+                    <div class="rain-mask"><img></div>
+                    <div class="rain-cont">--</div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <!--国家基本站 结束-->
+
+            <!--实况监测图 开始-->
+            <div id="radar-module" class="module">
+              <div class="this-module">
+                <div class="module-head">
+                  <ul class="module-head-ul" data-change-group="top01">
+                    <li data-iter="1" id="zhgc">综合观测</li>
+                    <li data-iter="2" id="wxyt">卫星云图</li>
+                    <li class="selected" data-iter="3" id="tflj">台风路径</li>
+                  </ul>
+                </div>
+                <div class="module-cont">
+                  <ul class="module-cont-ul" data-change-group="top01">
+                    <li data-iter="1" id="zhgcimg"><a href="/gz/weatherLive/radar"><img id="pic1"
+                          class="monitor-pic"></a></li>
+                    <li data-iter="2" id="wxytimg"><a href="/gz/weatherLive/cloudPicture"><img id="pic2"
+                          class="monitor-pic"></a></li>
+                    <li class="selected" data-iter="3" id="tfljimg"><a
+                        href="/gz/weatherLive/typhoon"><img id="pic3" class="monitor-pic"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--实况监测图 结束-->
+
+            <!--最新消息  开始-->
+            <div class="news-module module">
+              <div class="module-head">
+                <div class="module-title selected">最新消息</div>
+                <div class="modelestyle" style="width: 426px;"></div>
+              </div>
+              <div class="module-cont">
+                <div class="weather-tips">
+                  <div class="analysis-title"
+                    style=" background: url(../designs/images/modules/news.png) left center no-repeat;"><span
+                      style="color:#FF0000;float:left;font-size:15px;">【突发天气提示】</span><span
+                      id="weathertip-ptime"></span></div>
+                  <!-- <div class="iconwrap"><img /></div> -->
+                  <div class="analysis-cont weathertip" id="weathertip-content">加载中...</div>
+                </div>
+                <div class="analysis-title"><a href="/gz/weatherForecast/shortTime">短时预报</a><span
+                    id="shorttime-ptime"></span></div>
+                <!-- <div class="iconwrap"><img /></div> -->
+                <div class="analysis-cont shorttime" id="shorttime-content">加载中...</div>
+
+                <ul class="news" id="news_cont">
+                
+                  <li><a href="http://www.tqyb.com.cn/gz/science/consult/2021-03-16/8132.html" title="广州塔综合气象信息发布系统">广州塔综合气象信息发布系统</a><span>
+                      2021-03-16
+                    </span></li>
+                
+                  <li><a href="http://www.tqyb.com.cn/gz/science/consult/2019-07-26/5205.html" title="花城事好办！灾害险必备的“气象证明”可以这样开啦！">花城事好办！灾害险必备的“气象证明”可以这样开啦！</a><span>
+                      2019-07-26
+                    </span></li>
+                
+              </ul>
+              <!-- 临时增加 -->
+              <div style="position:absolute;bottom:10px">
+                <a href="http://wjw.gz.gov.cn/ztzl/xxfyyqfk/" target="_blank"><img style="width:528px; height:80px;"
+                    alt="" src="/designs/images/xghb.jpg"></a>
+              </div>
+            </div>
+          </div>
+          <!--最新消息  结束-->
+
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!--宣传横幅 开始 -->
+      <div class="wrapper" id="column02" style="height: 128px;">
+        <div class="wrapper-container">
+          <a style="display: block;  height: 118px;" href="https://gzga.museumbi.cn/yunjidi/#/" target="_blank">
+            <img style="display: block; height: 118px;" src="/designs/images/p20.png" />
+          </a>
+        </div>
+      </div>
+      <!--宣传横幅 结束 -->
+
+      <div class="wrapper" id="column02">
+        <div class="wrapper-container">
+          <!--过去实况 开始-->
+          <div id="past-monitor" class="past-monitor">
+            <div class="column-head">
+              <h3 style="margin-left: 0px">实况监控</h3>
+              <div class="modelestyle" style="width: 256px;"></div>
+            </div>
+            <div class="column-cont" style="top:-30px;height:378px;">
+              <ul class="past-monitor-date" style="display:none">
+                <li class="yestoday">
+                  <div class="margin-1">
+                    <div id="data-yestoday" class="datelist">08月16日</div>
+                    <div class="datelist-des">　</div>
+                  </div>
+                </li>
+                <li class="today">
+                  <div class="margin-0">
+                    <div id="data-today" class="datelist">08月17日</div>
+                    <div class="datelist-des">　</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+              <div class="past-monitor-pic">
+                <img id="obtdisPic" src="/data/obtMap/BCGZ_TempA.png" style="height: 378px">
+                <span onclick='sevenDayGift.prototype.loadData("113.32","23.005","番禺区大石街植村");' title='番禺区大石街植村'
+                  style='top:197px;left:144px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.315","23.139","天河南街体育西路");' title='天河南街体育西路'
+                  style='top:168px;left:143px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.5","23.183","黄埔街公路街");' title='黄埔街公路街'
+                  style='top:159px;left:187px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.474","23.091","文冲街文船路");' title='文冲街文船路'
+                  style='top:178px;left:181px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.35","23.3","太和镇朝亮南路");' title='太和镇朝亮南路'
+                  style='top:133px;left:151px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.517","23.35","黄埔区九龙镇镇区");' title='黄埔区九龙镇镇区'
+                  style='top:122px;left:192px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.217","23.267","江高镇田南路");' title='江高镇田南路'
+                  style='top:140px;left:120px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.367","22.95","市桥街沙墟村");' title='市桥街沙墟村'
+                  style='top:209px;left:156px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.417","22.8","大岗镇灵山村");' title='大岗镇灵山村'
+                  style='top:237px;left:166px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.612","22.638","万顷沙镇红海村");' title='万顷沙镇红海村'
+                  style='top:275px;left:214px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.433","23.033","化龙镇草堂村");' title='化龙镇草堂村'
+                  style='top:190px;left:171px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.717","23.717","良口镇良口大街");' title='良口镇良口大街'
+                  style='top:44px;left:240px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.417","23.65","鳌头镇龙潭广韶路");' title='鳌头镇龙潭广韶路'
+                  style='top:59px;left:168px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.617","23.283","增城区中新镇");' title='增城区中新镇'
+                  style='top:136px;left:216px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.717","23.167","仙村镇水利所");' title='仙村镇水利所'
+                  style='top:163px;left:240px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.321","23.44","花东镇花都大道北");' title='花东镇花都大道北'
+                  style='top:103px;left:145px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.15","23.467","狮岭镇东升中路");' title='狮岭镇东升中路'
+                  style='top:99px;left:103px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.067","23.383","赤坭镇沿江路");' title='赤坭镇沿江路'
+                  style='top:115px;left:84px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.283","23.55","梯面镇金梯大道");' title='梯面镇金梯大道'
+                  style='top:79px;left:134px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.467","23.433","太平镇康乐西路");' title='太平镇康乐西路'
+                  style='top:105px;left:179px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.419","23.073","长洲街金洲大道");' title='长洲街金洲大道'
+                  style='top:183px;left:168px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.4","23.383","钟落潭镇福龙路");' title='钟落潭镇福龙路'
+                  style='top:115px;left:164px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.55","22.767","南沙街大涌村");' title='南沙街大涌村'
+                  style='top:248px;left:199px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.45","22.95","石碁镇海傍村");' title='石碁镇海傍村'
+                  style='top:208px;left:176px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.867","23.9","吕田镇东明");' title='吕田镇东明'
+                  style='top:5px;left:275px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.783","23.5","增城区派潭镇");' title='增城区派潭镇'
+                  style='top:90px;left:255px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.883","23.417","增城区正果镇");' title='增城区正果镇'
+                  style='top:108px;left:278px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.65","23.633","温泉镇荔泉路");' title='温泉镇荔泉路'
+                  style='top:62px;left:224px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.833","23.383","增城区小楼镇");' title='增城区小楼镇'
+                  style='top:116px;left:267px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.533","23.6","鳌头镇明珠工业园");' title='鳌头镇明珠工业园'
+                  style='top:69px;left:195px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.833","23.767","吕田镇温塘肚村");' title='吕田镇温塘肚村'
+                  style='top:33px;left:267px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.848","23.284","增江街东方村");' title='增江街东方村'
+                  style='top:137px;left:271px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.454","22.854","东涌镇鱼窝头村");' title='东涌镇鱼窝头村'
+                  style='top:228px;left:176px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.667","22.656","龙穴街港务公司");' title='龙穴街港务公司'
+                  style='top:270px;left:227px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.21","23.15","金沙街横沙复建街");' title='金沙街横沙复建街'
+                  style='top:165px;left:117px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.817","23.3","荔城街气象路");' title='荔城街气象路'
+                  style='top:132px;left:264px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.917","23.8","吕田镇东升菜场");' title='吕田镇东升菜场'
+                  style='top:26px;left:288px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.275","23.582","梯面镇红山村站");' title='梯面镇红山村站'
+                  style='top:71px;left:133px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.417","22.783","大岗镇东隆村");' title='大岗镇东隆村'
+                  style='top:244px;left:168px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("112.99","23.391","赤坭镇门口坑村站");' title='赤坭镇门口坑村站'
+                  style='top:114px;left:65px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.73","23.416","小楼镇竹坑村");' title='小楼镇竹坑村'
+                  style='top:108px;left:243px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.948","23.365","正果镇兰溪村");' title='正果镇兰溪村'
+                  style='top:120px;left:295px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.912","23.486","正果镇浪拔村");' title='正果镇浪拔村'
+                  style='top:93px;left:285px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.857","23.187","石滩镇灯堂村");' title='石滩镇灯堂村'
+                  style='top:157px;left:273px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.813","23.136","石滩镇下围村");' title='石滩镇下围村'
+                  style='top:168px;left:263px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.62","22.586","万顷沙镇十九涌");' title='万顷沙镇十九涌'
+                  style='top:286px;left:216px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.166","23.494","狮岭镇双龙村");' title='狮岭镇双龙村'
+                  style='top:92px;left:107px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.583","23.55","城郊街新村北路");' title='城郊街新村北路'
+                  style='top:80px;left:207px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.167","23.133","金沙洲大沙路");' title='金沙洲大沙路'
+                  style='top:169px;left:108px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.861","23.718","良口镇溪头村");' title='良口镇溪头村'
+                  style='top:44px;left:273px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.477","23.659","鳌头镇民乐中学");' title='鳌头镇民乐中学'
+                  style='top:57px;left:182px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.931","23.905","吕田镇东联村");' title='吕田镇东联村'
+                  style='top:4px;left:291px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("112.977","23.449","赤坭镇西边村站");' title='赤坭镇西边村站'
+                  style='top:102px;left:62px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.22","23.585","梯面镇王子山管理处");' title='梯面镇王子山管理处'
+                  style='top:72px;left:120px;background:none;'></span>
+                <span onclick='sevenDayGift.prototype.loadData("113.772","23.837","良口镇长流村");' title='良口镇长流村'
+                  style='top:18px;left:253px;background:none;'></span>
+              </div>
+              <ul id="data-past-monitor" class="hour-ul" style="display:none">
+                <li class="hour-li"><span>00时</span>
+                  <div class="t"><a>28.5</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>01时</span>
+                  <div class="t"><a>27.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>02时</span>
+                  <div class="t"><a>27.3</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>03时</span>
+                  <div class="t"><a>29.2</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>04时</span>
+                  <div class="t max"><a>33.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>05时</span>
+                  <div class="t"><a>35.7</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>06时</span>
+                  <div class="t"><a>34.6</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>07时</span>
+                  <div class="t"><a>27.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>08时</span>
+                  <div class="t"><a>27.3</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>09时</span>
+                  <div class="t"><a>29.2</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>10时</span>
+                  <div class="t"><a>29.2</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>11时</span>
+                  <div class="t"><a>33.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>12时</span>
+                  <div class="t"><a>35.7</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>13时</span>
+                  <div class="t"><a>34.6</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>14时</span>
+                  <div class="t"><a>27.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>15时</span>
+                  <div class="t"><a>27.3</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>16时</span>
+                  <div class="t"><a>29.2</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>17时</span>
+                  <div class="t"><a>33.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>18时</span>
+                  <div class="t"><a>35.7</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>19时</span>
+                  <div class="t"><a>34.6</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>20时</span>
+                  <div class="t min"><a>29.2</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>21时</span>
+                  <div class="t"><a>33.8</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>22时</span>
+                  <div class="t"><a>35.7</a><b class="point"></b></div>
+                </li>
+                <li class="hour-li"><span>23时</span>
+                  <div class="t"><a>34.6</a><b class="point"></b></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--过去实况 结束-->
+
+          <!--七天精细化预报 开始-->
+          <div class="daysforecast-module">
+            <div class="column-head daysforecaststyle">
+              <!-- <ul class="module-head-ul" data-change-group="top03">
+				<li class="selected" data-iter="1">三天预报</li>
+				<li data-iter="2" class="">七天精细化预报</li>
+			</ul> -->
+              <h3>七天精细化预报</h3>
+              <div class="cloumn-title-date" style="border-left: 1px solid #d7d7d7;"><img
+                  src="/designs/images/modules/daysforecasttime.png"><span
+                  id="data-daysforecast-ptime">--年--月--日--时--分</span>发布</div>
+              <!--街镇位置导航 开始-->
+              <div id="location-nav" class="location-nav">
+                <div class="location-areas-wrap">
+                  <div class="location-gz">
+                    <div class="area-head">广州市区</div>
+                    <div class="street-head">全市各个街镇</div>
+
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="东湖街道" class="stree">东湖街道</li>
+                      <li selectid="北京街道">北京街道</li>
+                      <li selectid="梅花村街道">梅花村街道</li>
+                      <li selectid="建设街道">建设街道</li>
+                      <li selectid="白云街道">白云街道</li>
+                      <li selectid="洪桥街道">洪桥街道</li>
+                      <li selectid="广卫街道">广卫街道</li>
+                      <li selectid="六榕街道">六榕街道</li>
+                      <li selectid="流花街道">流花街道</li>
+                      <li selectid="东风街道">东风街道</li>
+                      <li selectid="光塔街道">光塔街道</li>
+                      <li selectid="诗书街道">诗书街道</li>
+                      <li selectid="大新街道">大新街道</li>
+                      <li selectid="人民街道">人民街道</li>
+                      <li selectid="农林街道">农林街道</li>
+                      <li selectid="大东街道">大东街道</li>
+                      <li selectid="大塘街道">大塘街道</li>
+                      <li selectid="珠光街道">珠光街道</li>
+                      <li selectid="华乐街道">华乐街道</li>
+                      <li selectid="矿泉街道">矿泉街道</li>
+                      <li selectid="登峰街道">登峰街道</li>
+                      <li selectid="黄花岗街道">黄花岗街道</li>
+                    </ul>
+                    <div class="area-name" data-code="GDYX">越秀区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="新港街道" class="stree">新港街道</li>
+                      <li selectid="华洲街道">华洲街道</li>
+                      <li selectid="海幢街道">海幢街道</li>
+                      <li selectid="官洲街道">官洲街道</li>
+                      <li selectid="琶洲街道">琶洲街道</li>
+                      <li selectid="南洲街道">南洲街道</li>
+                      <li selectid="江海街道">江海街道</li>
+                      <li selectid="凤阳街道">凤阳街道</li>
+                      <li selectid="南石头街道">南石头街道</li>
+                      <li selectid="南华西街道">南华西街道</li>
+                      <li selectid="龙凤街道">龙凤街道</li>
+                      <li selectid="滨江街道">滨江街道</li>
+                      <li selectid="素社街道">素社街道</li>
+                      <li selectid="江南中街道">江南中街道</li>
+                      <li selectid="沙园街道">沙园街道</li>
+                      <li selectid="昌岗街道">昌岗街道</li>
+                      <li selectid="赤岗街道">赤岗街道</li>
+                      <li selectid="瑞宝街道">瑞宝街道</li>
+                    </ul>
+                    <div class="area-name" data-code="GDHH">海珠区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="逢源街道" class="stree">逢源街道</li>
+                      <li selectid="南源街道">南源街道</li>
+                      <li selectid="西村街道">西村街道</li>
+                      <li selectid="彩虹街道">彩虹街道</li>
+                      <li selectid="东漖街道">东漖街道</li>
+                      <li selectid="东沙街道">东沙街道</li>
+                      <li selectid="沙面街道">沙面街道</li>
+                      <li selectid="岭南街道">岭南街道</li>
+                      <li selectid="华林街道">华林街道</li>
+                      <li selectid="多宝街道">多宝街道</li>
+                      <li selectid="昌华街道">昌华街道</li>
+                      <li selectid="龙津街道">龙津街道</li>
+                      <li selectid="金花街道">金花街道</li>
+                      <li selectid="站前街道">站前街道</li>
+                      <li selectid="桥中街道">桥中街道</li>
+                      <li selectid="白鹤洞街道">白鹤洞街道</li>
+                      <li selectid="冲口街道">冲口街道</li>
+                      <li selectid="花地街道">花地街道</li>
+                      <li selectid="石围塘街道">石围塘街道</li>
+                      <li selectid="茶滘街道">茶滘街道</li>
+                      <li selectid="海龙街道">海龙街道</li>
+                      <li selectid="中南街道">中南街道</li>
+                    </ul>
+                    <div class="area-name" data-code="GDLW">荔湾区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="前进街道" class="stree">前进街道</li>
+                      <li selectid="长兴街道">长兴街道</li>
+                      <li selectid="五山街道">五山街道</li>
+                      <li selectid="石牌街道">石牌街道</li>
+                      <li selectid="黄村街道">黄村街道</li>
+                      <li selectid="林和街道">林和街道</li>
+                      <li selectid="凤凰街道">凤凰街道</li>
+                      <li selectid="猎德街道">猎德街道</li>
+                      <li selectid="员村街道">员村街道</li>
+                      <li selectid="车陂街道">车陂街道</li>
+                      <li selectid="沙河街道">沙河街道</li>
+                      <li selectid="沙东街道">沙东街道</li>
+                      <li selectid="天河南街道">天河南街道</li>
+                      <li selectid="兴华街道">兴华街道</li>
+                      <li selectid="棠下街道">棠下街道</li>
+                      <li selectid="天园街道">天园街道</li>
+                      <li selectid="冼村街道">冼村街道</li>
+                      <li selectid="元岗街道">元岗街道</li>
+                      <li selectid="龙洞街道">龙洞街道</li>
+                      <li selectid="珠吉街道">珠吉街道</li>
+                      <li selectid="新塘街道">新塘街道</li>
+                    </ul>
+                    <div class="area-name" data-code="GDTH">天河区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="黄埔街道" class="stree">黄埔街道</li>
+                      <li selectid="红山街道">红山街道</li>
+                      <li selectid="鱼珠街道">鱼珠街道</li>
+                      <li selectid="夏港街道">夏港街道</li>
+                      <li selectid="大沙街道">大沙街道</li>
+                      <li selectid="文冲街道" class="stree">文冲街道</li>
+                      <li selectid="南岗街道">南岗街道</li>
+                      <li selectid="穗东街道">穗东街道</li>
+                      <li selectid="长洲街道">长洲街道</li>
+                      <li selectid="联和街道">联和街道</li>
+                      <li selectid="永和街道">永和街道</li>
+                      <li selectid="萝岗街道">萝岗街道</li>
+                      <li selectid="长岭街道">长岭街道</li>
+                      <li selectid="云埔街道">云埔街道</li>
+                      <li selectid="九佛街道">九佛街道</li>
+                      <li selectid="龙湖街道">龙湖街道</li>
+                      <li selectid="新龙镇">新龙镇</li>
+                    </ul>
+                    <div class="area-name" data-code="GDHU">黄埔区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="新华街" class="stree">新华街</li>
+                      <li selectid="狮岭镇">狮岭镇</li>
+                      <li selectid="新雅街">新雅街</li>
+                      <li selectid="花山镇">花山镇</li>
+                      <li selectid="炭步镇">炭步镇</li>
+                      <li selectid="花东镇">花东镇</li>
+                      <li selectid="花城街">花城街</li>
+                      <li selectid="赤泥镇">赤泥镇</li>
+                      <li selectid="秀全街">秀全街</li>
+                      <li selectid="梯面镇">梯面镇</li>
+                    </ul>
+                    <div class="area-name" data-code="GDHX">花都区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="太和镇" class="stree">太和镇</li>
+                      <li selectid="钟落潭镇">钟落潭镇</li>
+                      <li selectid="江高镇">江高镇</li>
+                      <li selectid="人和镇">人和镇</li>
+                      <li selectid="石井街道">石井街道</li>
+                      <li selectid="同和街道">同和街道</li>
+                      <li selectid="均禾街道">均禾街道</li>
+                      <li selectid="永平街道">永平街道</li>
+                      <li selectid="嘉禾街道">嘉禾街道</li>
+                      <li selectid="松洲街道">松洲街道</li>
+                      <li selectid="金沙街道">金沙街道</li>
+                      <li selectid="新市街道">新市街道</li>
+                      <li selectid="黄石街道">黄石街道</li>
+                      <li selectid="京溪街道">京溪街道</li>
+                      <li selectid="棠景街道">棠景街道</li>
+                      <li selectid="景泰街道">景泰街道</li>
+                      <li selectid="三元里街道">三元里街道</li>
+                      <li selectid="同德街道">同德街道</li>
+                    </ul>
+                    <div class="area-name" data-code="GDBY">白云区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="沙头街" class="stree">沙头街</li>
+                      <li selectid="市桥街">市桥街</li>
+                      <li selectid="大石镇">大石镇</li>
+                      <li selectid="沙湾镇">沙湾镇</li>
+                      <li selectid="石壁街">石壁街</li>
+                      <li selectid="钟村镇">钟村镇</li>
+                      <li selectid="新造镇">新造镇</li>
+                      <li selectid="东环街">东环街</li>
+                      <li selectid="南村镇">南村镇</li>
+                      <li selectid="大龙街">大龙街</li>
+                      <li selectid="石碁镇">石碁镇</li>
+                      <li selectid="化龙镇">化龙镇</li>
+                      <li selectid="洛浦街">洛浦街</li>
+                      <li selectid="石楼镇">石楼镇</li>
+                      <li selectid="桥南街">桥南街</li>
+                      <li selectid="小谷围街">小谷围街</li>
+                    </ul>
+                    <div class="area-name" data-code="GDPY">番禺区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="万顷沙镇" class="stree">万顷沙镇</li>
+                      <li selectid="榄核镇">榄核镇</li>
+                      <li selectid="横沥镇">横沥镇</li>
+                      <li selectid="龙穴街">龙穴街</li>
+                      <li selectid="东涌镇">东涌镇</li>
+                      <li selectid="大岗镇">大岗镇</li>
+                      <li selectid="南沙街">南沙街</li>
+                      <li selectid="黄阁镇">黄阁镇</li>
+                      <li selectid="珠江街">珠江街</li>
+                    </ul>
+                    <div class="area-name" data-code="GDNS">南沙区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="江埔街" class="stree">江埔街</li>
+                      <li selectid="良口镇">良口镇</li>
+                      <li selectid="太平镇">太平镇</li>
+                      <li selectid="吕田镇">吕田镇</li>
+                      <li selectid="温泉镇">温泉镇</li>
+                      <li selectid="鳌头镇">鳌头镇</li>
+                      <li selectid="城郊街">城郊街</li>
+                      <li selectid="街口街">街口街</li>
+                    </ul>
+                    <div class="area-name" data-code="GDCO">从化区</div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="location-areas">
+                    <ul class="location-street">
+                      <li selectid="荔城街" class="stree">荔城街</li>
+                      <li selectid="中新镇">中新镇</li>
+                      <li selectid="派潭镇">派潭镇</li>
+                      <li selectid="正果镇">正果镇</li>
+                      <li selectid="新塘镇">新塘镇</li>
+                      <li selectid="小楼镇">小楼镇</li>
+                      <li selectid="增江街">增江街</li>
+                      <li selectid="石滩镇">石滩镇</li>
+                      <li selectid="朱村街">朱村街</li>
+                      <li selectid="新塘镇永宁街">新塘镇永宁街</li>
+                      <li selectid="仙村镇">仙村镇</li>
+                    </ul>
+                    <div class="area-name" data-code="GDZC">增城区</div>
+                    <div class="clear"></div>
+                  </div>
+
+                </div>
+                <div class="location-name">
+                  <span>选择位置：</span>
+                  <input id="location-name" type="text" class="w-serch-input" maxlength="30" size="35" name="word"
+                    value="分区、街镇、景点" onfocus="if(value=='分区、街镇、景点') {value=''}"
+                    onblur="if (value=='') {value='分区、街镇、景点'}">
+                  <div id="w-serch-bn">查天气</div>
+                </div>
+              </div>
+              <!--街镇位置导航 结束-->
+
+              <!--精细位置导航 开始-->
+              <div id="location-ex-nav" class="location-nav">
+                <div class="baidumap"></div>
+                <!-- <div class="modelestyle">
+				</div> -->
+                <div class="location-map">地图</div>
+              </div>
+              <!--精细位置导航 结束-->
+            </div>
+            <div class="clear"></div>
+            <!-- <ul class="module-cont-ul" data-change-group="top03">
+			<li data-iter="1" class="selected">
+				<div class="threecolumn-cont-type">
+					<div class="ddate">日期</div><div class="dtime">时间</div><div class="dtemp">温度（℃）</div><div class="drain">天气降水</div>
+				</div>
+				<div class="threecolumn-cont-time">
+					<div class="ddatetimev" id="ddays"></div>
+					<div class="ddatetimev" id="dtimes"></div>
+				</div>
+				<div class="threecolumn-cont-rain" id="tempthreeday"></div>
+				<div class="threecolumn-cont-rain" id="rainthreeday"></div>
+			</li>
+		<li data-iter="2">	 -->
+            <div class="column-cont">
+              <div class="block" tag="1">过去实况</div>
+              <ul id="data-daysforecast-date" class="daysforecast-date">
+                <li>
+                  <div class="margin-1">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1 rain">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1 hightemp">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1 sunday hightemp">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1 sunday hightemp">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1 hightemp">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="margin-1">
+                    <div class="datelist">--月--日</div>
+                    <div class="datelist-des">--</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+
+              <ul class="daysforecast-bac">
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+
+              <ul id="data-daysforecast-gift-t" class="daysforecast-hour daysforecast-hour-20">
+                <li class="hour-li"><b class="point" title="00时 28.5℃" data-t="28.5"></b></li>
+              </ul>
+
+              <ul id="data-daysforecast-day" class="daysforecast-fore-day">
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span><span class="up"></span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span><span class="down"></span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span><span class="up"></span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span><span class="up"></span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span></div>
+                </li>
+                <li class="day">
+                  <div class="bac"></div><img width="75px" height="60px" src="/designs/images/wicon/99.png"
+                    title="晴到多云">
+                  <div class="maxt"><span class="val">--℃</span></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+
+              <ul id="data-daysforecast-night" class="daysforecast-fore-night">
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+                <li class="day">
+                  <div class="bac"></div>
+                  <div class="mint"><span class="up">--</span><span class="val">--℃</span></div><img width="75px"
+                    height="60px" src="/designs/images/wicon/99.png" title="晴到多云">
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+            <!-- </li>
+		</ul> -->
+          </div>
+          <!--七天精细化预报 结束-->
+        </div>
+      </div>
+
+
+      <div class="wrapper" id="column01">
+        <div class="wrapper-container">
+          <!--实况监控数据 开始-->
+          <div class="obts-monitor">
+            <div class="column-head">
+              <ul class="module-head-ul" data-change-group="top02">
+                <li class="selected" onmouseover="obtStatisticsObj.change('obtMap/BCGZ_TempA.png');" data-iter="1"
+                  title="气温是指地面气象观测规定高度(即1.25~2.00米,国内为1.5米）上的空气温度。">温度</li>
+                <li data-iter="2" onmouseover="obtStatisticsObj.change('obtMap/BCGZ_RainA.png');"
+                  title="雨量就是在一定时段内，降落到水平面上（无渗漏、蒸发、流失等）的雨水深度。">雨量</li>
+                <li data-iter="3" onmouseover="obtStatisticsObj.change('obtMap/BCGZ_WindA.png');"
+                  title="风速是指空气相对于地球某一固定地点的运动速率。">风速</li>
+              </ul>
+            </div>
+            <div class="column-cont">
+              <ul class="module-cont-ul" data-change-group="top02">
+                <li class="selected" data-iter="1">
+                  <div class="obt-report">
+                    <div class="obt-reportdate" id="temp-date">--</div>
+                    <div class="max" id="temp-max">--</div>
+                    <div class="min" id="temp-min">--</div>
+                    <div id="time">
+                      <table class="statistics">
+                        <tbody id="statistics-temp"></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-iter="2">
+                  <div class="obt-report">
+                    <div class="obt-reportdate" id="rain-date">--</div>
+                    <div class="max" id="rain-max">--</div>
+                    <div class="min" id="rain-min">--</div>
+                    <div id="time">
+                      <table class="statistics">
+                        <tbody id="statistics-rain">
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+
+                <li data-iter="3">
+                  <div class="obt-report">
+                    <div class="obt-reportdate" id="wind-date">--</div>
+                    <div class="max" id="wind-max">--</div>
+                    <div class="min" id="wind-min">--</div>
+                    <div id="time">
+                      <table class="statistics">
+                        <tbody id="statistics-wind">
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--实况监控数据 结束-->
+
+          <!--空气质量  开始-->
+          <div class="environment-module module">
+            <div class="column-head">
+              <div class="modelestyle" style="width: 426px;"></div>
+              <h3>空气质量</h3>
+            </div>
+            <div class="column-cont">
+              <ul class="module-cont-ul">
+                <li class="selected" data-iter="1">
+                  <div class="environment-aqi">
+                    <div class="environment-head">
+                      <div class="environment-title">广州市空气质量预报（<span class="environment-ptime"
+                          id="aqi-fime">08月18日</span>）</div>
+                      <div class="date"><a href="http://www.gzepb.gov.cn/"
+                          target="_blank">广东省广州生态环境监测中心站</a>和广州市气象台<span id="aqi-wtime">--</span>发布</div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="environment-el">
+                      <div class="environment-el-t">AQI</div>
+                      <div class="environment-el-v" id="aqi-val">50-70</div>
+                    </div>
+                    <div class="environment-el" style="background-color: #F2F2F2;">
+                      <div class="environment-el-t">空气质量级别</div>
+                      <div class="environment-el-v" id="aqi-level">优-良</div>
+                    </div>
+                    <div class="environment-el">
+                      <div class="environment-el-t">首要污染物</div>
+                      <div class="environment-el-v" id="primary-p">二氧化氮</div>
+                    </div>
+                    <div class="environment-el" style="background-color: #F2F2F2;">
+                      <div class="environment-el-t">PM2.5日均值</div>
+                      <div class="environment-el-v" id="aqi-pm25">36-46微克/立方米</div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+                  <div class="environment-pollute">
+                    <div class="environment-head" id="environment-head">
+                      <div class="environment-title">空气污染气象条件预报（<span id="environment-ptime"
+                          class="environment-ptime">--</span>）</div>
+                      <div class="date">广州市气象台<span id="environment-ftime">--</span>发布</div>
+                      <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">越秀区</div>
+                      <div id="data-environment-yuexiu" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">海珠区</div>
+                      <div id="data-environment-haizhu" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">天河区</div>
+                      <div id="data-environment-tianhe" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area el-right">
+                      <div class="environment-area-t">白云区</div>
+                      <div id="data-environment-baiyun" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">黄埔区</div>
+                      <div id="data-environment-huangpu" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">荔湾区</div>
+                      <div id="data-environment-liwan" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">南沙区</div>
+                      <div id="data-environment-nansha" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area el-right">
+                      <div class="environment-area-t">花都区</div>
+                      <div id="data-environment-huadu" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">番禺区</div>
+                      <div id="data-environment-panyu" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">从化区</div>
+                      <div id="data-environment-conghua" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area">
+                      <div class="environment-area-t">增城区</div>
+                      <div id="data-environment-zengcheng" class="environment-area-v">二级（较好）</div>
+                    </div>
+                    <div class="environment-area el-right">
+                      <div class="environment-area-t">保护环境</div>
+                      <div class="environment-area-v">关注环境气象</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--空气质量 结束-->
+
+          <!-- 生活指数开始 -->
+          <div class="living-index">
+            <div class="column-head">
+              <h3>生活指数</h3>
+              <div class="modelestyle" style="width: 196px;"></div>
+              <div id="data-living-pdate" class="cloumn-title-date"></div>
+            </div>
+            <div class="column-cont">
+              <ul>
+                <li>
+                  <div class="life-index">
+                    <div class="life-zs both">
+                      <div class="life-zs-y"><img src="/designs/images/life/4.png" /></div>
+                      <div class="life-zs-i">穿衣：<span id="dressing"></span></div>
+                    </div>
+                    <div class="life-zs el-right">
+                      <div class="life-zs-y"><img src="/designs/images/life/1.gif"
+                          style="padding-top: 2px;" /></div>
+                      <div class="life-zs-i">紫外线：<span id="ultraviolet"></span></div>
+                    </div>
+                    <div class="life-zs both">
+                      <div class="life-zs-y"><img src="/designs/images/life/3.gif" /></div>
+                      <div class="life-zs-i">火险：<span id="fireDanger"></span></div>
+                    </div>
+                    <div class="life-zs el-right">
+                      <div class="life-zs-y"><img src="/designs/images/life/2.png"
+                          style="padding-top: 12px;" /></div>
+                      <div class="life-zs-i">舒适度： <span id="bodyComfortable"></span></div>
+                    </div>
+                    <div class="life-zs both">
+                      <div class="life-zs-y"><img src="/designs/images/life/5.gif" /></div>
+                      <div class="life-zs-i">晾晒： <span id="field"></span></div>
+                    </div>
+                    <div class="life-zs el-right">
+                      <div class="life-zs-y"><img src="/designs/images/life/9.gif"
+                          style="padding-top: 6px;" /></div>
+                      <div class="life-zs-i">灰霾： <span id="dustHaze"></span></div>
+                    </div>
+                    <div class="life-zs both">
+                      <div class="life-zs-y"><img src="/designs/images/life/6.gif" /></div>
+                      <div class="life-zs-i">霉变： <span id="mildew"></span></div>
+                    </div>
+                    <div class="life-zs el-right">
+                      <div class="life-zs-y"><img src="/designs/images/life/10.gif" /></div>
+                      <div class="life-zs-i">雨伞： <span id="umbrella"></span></div>
+                    </div>
+                    <div class="life-zs both" style="border-bottom: 0px;">
+                      <div class="life-zs-y"><img src="/designs/images/life/8.png" /></div>
+                      <div class="life-zs-i">负离子浓度： <span id="aeroanion"></span></div>
+                    </div>
+                    <div class="life-zs el-right" style="border-bottom: 0px;">
+                      <div class="life-zs-y"><img src="/designs/images/life/9.png"
+                          style="padding-top: 12px;" /></div>
+                      <div class="life-zs-i">交通： <span id="traffic"></span></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 生活指数 结束 -->
+          <div class="clear"></div>
+        </div>
+      </div>
+
+
+      <!--我的一天 开始-->
+      <div class="wrapper" id="column03">
+        <div class="wrapper-container" id="myday">
+          <div class="column-head">
+            <h3>我的一天</h3>
+            <div class="cloumn-title-date">2015年08月24日</div>
+            <div class="cloumn-exp">说明：我的一天根据广州市气象台发布的精细化预报产品制作而成，由系统自动分析出生活情景，可以点击任意时间点编辑。</div>
+          </div>
+          <div class="cloumn-cont">
+            <ul class="period">
+              <li class="time01 time-wrap time-wrap-a">
+                <div class="time">07:00</div>
+                <div class="icon"></div>
+                <div class="doing">我住在<a>番禺区大石植村附近</a>，每天都不想起床，太阳已经出来了。</div>
+              </li>
+              <li class="time02 time-wrap time-wrap-b">
+                <div class="time">08:00</div>
+                <div class="icon"></div>
+                <div class="doing">起床了，急急匆匆赶公交，我要从<a>番禺区大石植村一路</a>到<a>越秀区泰恒大厦</a>，现在太阳有点晒</div>
+              </li>
+              <li class="time03 time-wrap time-wrap-a">
+                <div class="time">09:00</div>
+                <div class="icon"></div>
+                <div class="doing">到了<a>越秀区泰恒大厦</a>，打开窗户，<b>清风</b>吹过，开始一天的工作喽！</div>
+              </li>
+              <li class="time04 time-wrap time-wrap-b">
+                <div class="time">12:00</div>
+                <div class="icon"></div>
+                <div class="doing">中午吃什么好呢？就在<a>附近（泰恒大厦）</a>吃点好了。</div>
+              </li>
+              <li class="time05 time-wrap time-wrap-a">
+                <div class="time">14:00</div>
+                <div class="icon"></div>
+                <div class="doing">睡过午觉，精神了很多<a>外面</a><b>有雨</b>。</div>
+              </li>
+              <li class="time06 time-wrap time-wrap-b">
+                <div class="time">16:00</div>
+                <div class="icon"></div>
+                <div class="doing">下午茶时间，同事们都在聊<b>台风苏迪罗</b>。</div>
+              </li>
+              <li class="time07 time-wrap time-wrap-a">
+                <div class="time">18:00</div>
+                <div class="icon"></div>
+                <div class="doing">约了他（她）一起到<a>番禺区大石植村一路</a>吃饭，可是忘了<b>带伞。</b></div>
+              </li>
+              <li class="time08 time-wrap time-wrap-b">
+                <div class="time">20:00</div>
+                <div class="icon"></div>
+                <div class="doing">下班路上经过<a>新光快速路</a>,那里有<b>内涝。</b>回到<a>番禺区大石植村一路</a>，<a>晚上有雨</a>,洗的衣服会干吗？</div>
+              </li>
+              <li class="time09 time-wrap time-wrap-a">
+                <div class="time">22:00</div>
+                <div class="icon"></div>
+                <div class="doing">累了一天，终于可以躺着床上了，外面还在下着雨。</div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--我的一天 结束-->
+
+      <div class="clear"></div>
+      <div class="wrapper" id="column04">
+        <div class="wrapper-container">
+          <!--科普基地 开始-->
+          <div class="kepu-module module-b">
+            <div class="column-head">
+              <ul class="module-head-ul" data-change-group="top03">
+                <li class="selected" data-iter="1">网上科普馆</li>
+                <li data-iter="2">气象小讲堂</li>
+              </ul>
+            </div>
+            <div class="cloumn-cont">
+              <ul class="module-cont-ul pics" data-change-group="top03">
+                <li class="textpic pic01 selected" data-iter="1">
+                  <a href="http://www.tqyb.com.cn/gz/science/sciencebase" target="_blank">
+                    <div class="textpic"
+                      style="background:url(/designs/images/kp/gz_vr0.png) center center no-repeat;"></div>
+                  </a>
+                  <a href="http://www.tqyb.com.cn/gz/science/sciencebase" target="_blank">
+                    <div class="textpic"
+                      style="background:url(/designs/images/kp/ch_vr.png) center center no-repeat;"></div>
+                  </a>
+                  <a href="http://www.tqyb.com.cn/gz/science/sciencebase" target="_blank">
+                    <div class="textpic"
+                      style="background:url(/designs/images/kp/hd_vr.png) center center no-repeat;"></div>
+                  </a>
+                </li>
+                <li class="textpic" data-iter="2">
+                  <ul class="xjt-ul">
+                    <li>
+                      <a href="http://www.tqyb.com.cn/gz/science/xjt">
+                        <img class="xjt-img" src="http://tqyb.com.cn/data/videoqxxkt/xjjstq01.jpg" />
+                        <img class="xjt-play" src="/designs/images/play.png" />
+                        <div>带你了解雷达图</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.tqyb.com.cn/gz/science/xjt">
+                        <img class="xjt-img" src="http://tqyb.com.cn/data/videoqxxkt/qxkxsy01.jpg" />
+                        <img class="xjt-play" src="/designs/images/play.png" />
+                        <div>空气大力士</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.tqyb.com.cn/gz/science/xjt">
+                        <img class="xjt-img" src="http://tqyb.com.cn/data/videoqxxkt/323.jpg" />
+                        <img class="xjt-play" src="/designs/images/play.png" />
+                        <div>2021世界气象日宣传片</div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.tqyb.com.cn/gz/science/xjt">
+                        <img class="xjt-img" src="http://tqyb.com.cn/data/videoqxxkt/qxdxt01.jpg" />
+                        <img class="xjt-play" src="/designs/images/play.png" />
+                        <div>台风小知识</div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--科普基地 结束-->
+
+          <!--气候公报   开始-->
+          <div class="doc-module module-b">
+            <div class="column-head">
+              <ul class="module-head-ul" data-change-group="top04">
+                <li class="selected" data-iter="1"><a href="/gz/climaticprediction/static/">气候统计</a></li>
+                <li data-iter="2"><a href="/gz/climaticprediction/bulletin/">气候公报</a></li>
+                <li data-iter="3"><a href="/gz/climaticprediction/appraise/">气候评价</a></li>
+                <li data-iter="4"><a href="/gz/climaticprediction/monitor/">气候监测</a></li>
+                <li data-iter="5"><a href="/gz/climaticprediction/islandmonitoring/">热岛监测</a></li>
+              </ul>
+            </div>
+            <div class="column-cont">
+              <ul class="module-cont-ul" data-change-group="top04">
+                <li class="selected" data-iter="1">
+                  <div class="statistics-change">当年统计</div>
+                  <div class="lishi-statistics">
+                    <div class="climate-statistics-area">
+                      <ul>
+                        <li tag="BCGZ" class="selected">市区</li>
+                        <li tag="GDPY">番禺区</li>
+                        <li tag="GDZC">增城区</li>
+                        <li tag="GDCO">从化区</li>
+                        <li tag="GDHX">花都区</li>
+                      </ul>
+                    </div>
+                    <div id="month_chartwrap" style="width:100%;height:180px;"></div>
+                  </div>
+                  <div class="dq-statistics">
+                    <div class="climate-statistics-type">
+                      <ul>
+                        <li tag="temp" class="selected">温度</li>
+                        <li tag="rain">雨量</li>
+                      </ul>
+                    </div>
+                    <div class="dq-statistics-title"></div>
+                    <div class="dq-statistics-tab"></div>
+                  </div>
+                </li>
+                <li data-iter="2">
+                  <dl id="bulletin">
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/bulletin/2022-03-10/9924.html" title="2021年广州市气候公报">2021年广州市气候公报</a><span>
+                          2022-03-10
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/bulletin/2021-09-24/9191.html" title="2020年广州市气候公报">2020年广州市气候公报</a><span>
+                          2021-09-24
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/bulletin/2020-03-27/6231.html" title="2019年广州市气候公报">2019年广州市气候公报</a><span>
+                          2020-03-27
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/bulletin/2019-01-18/4218.html" title="2018年广州市气候公报">2018年广州市气候公报</a><span>
+                          2019-01-18
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/bulletin/2018-02-12/2845.html" title="2017年广州市气候公报">2017年广州市气候公报</a><span>
+                          2018-02-12
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/bulletin/2017-01-23/1370.html" title="2016年广州市气候公报">2016年广州市气候公报</a><span>
+                          2017-01-23
+                        </span></dd>
+                    
+                  </dl>
+                </li>
+                <li data-iter="3">
+                  <dl id="forecast">
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/appraise/2022-07-15/10650.html" title="广州市2022年6月气候影响评价">广州市2022年6月气候影响评价</a><span>
+                          2022-07-15
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/appraise/2022-06-02/10343.html" title="广州市2022年5月气候影响评价">广州市2022年5月气候影响评价</a><span>
+                          2022-06-02
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/appraise/2022-05-02/10187.html" title="广州市2022年4月气候影响评价">广州市2022年4月气候影响评价</a><span>
+                          2022-05-02
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/appraise/2022-04-02/10049.html" title="广州市2022年3月气候影响评价">广州市2022年3月气候影响评价</a><span>
+                          2022-04-02
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/appraise/2022-03-03/9886.html" title="广州市2022年2月气候影响评价">广州市2022年2月气候影响评价</a><span>
+                          2022-03-03
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/appraise/2022-02-02/9758.html" title="广州市2022年1月气候影响评价">广州市2022年1月气候影响评价</a><span>
+                          2022-02-02
+                        </span></dd>
+                    
+                  </dl>
+                </li>
+                <li data-iter="4">
+                  <dl id="research">
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/monitor/2022-06-09/10405.html" title="气候监测快报【2022年第2期】南海夏季风已于5月第3候爆发，较常年偏早1候">气候监测快报【2022年第2期】南海夏季风已于5月第3候爆发，较常年偏早1候</a><span>
+                          2022-06-09
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/monitor/2022-06-09/10404.html" title="气候监测快报【2022年第1期】气温月际波动大，晴雨阶段性强，低温阴雨重">气候监测快报【2022年第1期】气温月际波动大，晴雨阶段性强，低温阴雨重</a><span>
+                          2022-06-09
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/monitor/2021-10-02/9248.html" title="气候监测快报【2021年第3期】8月无登陆或严重影响台风，9月仍需继续防台">气候监测快报【2021年第3期】8月无登陆或严重影响台风，9月仍需继续防台</a><span>
+                          2021-10-02
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/monitor/2021-10-02/9247.html" title="气候监测快报【2021年第2期】7月高温突出、下旬我市出现今年以来最强高温过程">气候监测快报【2021年第2期】7月高温突出、下旬我市出现今年以来最强高温过程</a><span>
+                          2021-10-02
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/monitor/2021-10-02/9246.html" title="气候监测快报【2021年第1期】近一个月全市温暖少雨">气候监测快报【2021年第1期】近一个月全市温暖少雨</a><span>
+                          2021-10-02
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/monitor/2021-09-23/9183.html" title="气候监测快报【2020年第1期】广州7月气温创历史新高">气候监测快报【2020年第1期】广州7月气温创历史新高</a><span>
+                          2021-09-23
+                        </span></dd>
+                    
+
+                  </dl>
+                </li>
+                <li data-iter="5">
+                  <dl id="heatisland">
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/islandmonitoring/2022-03-04/9893.html" title="2021年广州市城市热岛监测公报">2021年广州市城市热岛监测公报</a><span>
+                          2022-03-04
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/islandmonitoring/2021-04-13/8248.html" title="2020年广州市城市热岛监测公报">2020年广州市城市热岛监测公报</a><span>
+                          2021-04-13
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/islandmonitoring/2020-01-20/5834.html" title="2019年广州市城市热岛监测公报">2019年广州市城市热岛监测公报</a><span>
+                          2020-01-20
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/islandmonitoring/2019-05-10/4772.html" title="2018年广州市城市热岛监测公报">2018年广州市城市热岛监测公报</a><span>
+                          2019-05-10
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/islandmonitoring/2019-04-29/4723.html" title="2017年广州市城市热岛监测公报">2017年广州市城市热岛监测公报</a><span>
+                          2019-04-29
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/climaticprediction/islandmonitoring/2017-04-28/1702.html" title="2015年广州市城市热岛监测公报">2015年广州市城市热岛监测公报</a><span>
+                          2017-04-28
+                        </span></dd>
+                    
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--气候公报 结束-->
+
+          <!--气象资讯 开始-->
+          <div class="fagui-module module-b">
+            <div class="column-head">
+              <ul class="module-head-ul" data-change-group="top05">
+                <div class="modelestyle"></div>
+                <li class="selected" data-iter="1">气象资讯</li>
+                <!-- <li data-iter="2">气象科研</li> -->
+              </ul>
+            </div>
+            <div class="column-cont">
+              <ul class="module-cont-ul" data-change-group="top05">
+                <li class="selected" data-iter="1">
+                  <dl id="knowledge">
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/science/consult/2021-03-16/8132.html" title="广州塔综合气象信息发布系统">广州塔综合气象信息发布系统</a><span>
+                          2021-03-16
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/science/consult/2019-07-26/5205.html" title="花城事好办！灾害险必备的“气象证明”可以这样开啦！">花城事好办！灾害险必备的“气象证明”可以这样开啦！</a><span>
+                          2019-07-26
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/science/consult/2022-07-30/10717.html" title="【解除气象灾害应急响应通知】">【解除气象灾害应急响应通知】</a><span>
+                          2022-07-30
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/science/consult/2022-07-30/10714.html" title="【启动气象灾害应急响应通知】">【启动气象灾害应急响应通知】</a><span>
+                          2022-07-30
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/science/consult/2022-07-29/10710.html" title="【降级气象灾害应急响应通知】">【降级气象灾害应急响应通知】</a><span>
+                          2022-07-29
+                        </span></dd>
+                    
+                      <dd><a href="http://www.tqyb.com.cn/gz/science/consult/2022-07-29/10705.html" title="【升级气象灾害应急响应通知】">【升级气象灾害应急响应通知】</a><span>
+                          2022-07-29
+                        </span></dd>
+                    
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--气象资讯 结束-->
+
+          <!--气象视频 开始-->
+          <div class="video-module module-b">
+            <div class="column-head">
+              <ul class="module-head-ul" data-change-group="top06">
+                <li class="selected" data-iter="1">气象视频</li>
+              </ul>
+            </div>
+            <div class="column-cont">
+              <ul class="module-cont-ul pics" data-change-group="top06">
+                <li class="selected" data-iter="1">
+                  <div class="v-list"></div>
+                  <!--  <div class="v-name"></div> -->
+                  <div class="v-obj"></div>
+                </li>
+              </ul>
+
+              <!-- <img width="360px" height="205px" src="http://www.tqyb.com.cn/data/video/E98C9684AA80E778A27D0DBB1FCE3FB2.jpg">  -->
+
+            </div>
+          </div>
+          <!--气象视频 结束-->
+
+          <!--天气微博 开始-->
+          <div class="weibo-module module-b">
+            <div class="column-head">
+              <div class="modelestyle" style="width: 196px;"></div>
+              <h3>天气微博</h3>
+
+            </div>
+            <div class="column-cont" style="padding:0px;">
+              <iframe class="weibo-cn" src="https://m.weibo.cn/u/2294193132"></iframe>
+            </div>
+          </div>
+          <!--天气微博 结束-->
+          <div class="clear"></div>
+        </div>
+      </div>
+
+
+      <!--网站链接 开始 -->
+      
+<div class="wrapper" id="column05">
+
+</div>
+        <!--网站链接 结束 -->
+
+        <!--页面主题背景 开始 -->
+        <div id="body-back"></div>
+        <!--页面主题背景 结束 -->
+        </div>
+        <!--页脚 开始-->
+        
+  <div class="footer">
+
+    <ul class="links">
+      <div class="beian">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011302000935"
+          style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+          <img src="/designs/images/icon-police.png" style="float:left;" />
+          <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#ccc;">粤公网安备 44011302000935号
+          </p>
+        </a>
+      </div>
+
+      <li>
+        <div class="title">版权声明</div>
+        <div class="cont">
+          版权所有© 广州市气象台<br />
+          <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备06082644号</a><br />
+          <span>Copyright(C) 2017-2019 <br />by Guangzhou Meteorological Service All Rights Reserved</span>
+        </div>
+      </li>
+      <!-- 网站访问统计 开始 -->
+      <li style="margin-left: 0px;margin-top:30px;">
+        <script>
+          var _hmt = _hmt || [];
+          (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?909454fb497ba02a03f1164e15807aff";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
+      </li>
+      <!-- 网站访问统计 结束 -->
+      <li style="margin-left: 10px;margin-top:30px;">
+        <script
+          type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/20/296/0000/45004208/CA202960000450042080007.js' type='text/javascript'%3E%3C/script%3E"));</script>
+      </li>
+      <li style="margin-left: 10px">
+        <div class="title">联系我们</div>
+        <div class="cont">
+          广州市番禺区大石植村工业一路68号<br />
+          天气咨询：12121<br />
+          联系电话：020-66619588<br />
+          传真：020-66619585<br />
+        </div>
+      </li>
+      <li>
+        <div class="title">关注我们</div>
+        <div class="cont weixin">
+          拿出手机<br />[ 扫一扫 ]
+        </div>
+      </li>
+      <div class="clear"></div>
+    </ul>
+  </div>
+  <!-- 浏览器兼容性提示--开始 -->
+  <div id="browser-check">
+    <div class="browser-check-bac"></div>
+    <div class="browser-check-wrap">
+      <div class="browser-check">
+        <div class="browser-check-head">浏览器兼容性提示</div>
+        <div class="browser-check-tips">尊敬的用户：<br />　　您好。系统检测到您正在使用较低版本的浏览器访问本站，这会影响您在访问网站时的交互体验，我们建议您升级当前的浏览器或使用其它浏览器。
+        </div>
+        <div class="browser-check-support-head">本网站兼容当前大部分最新版本的浏览器，主要包括：</div>
+        <ul class="browser-check-support">
+          <li>IE10、IE11、Edge、Chrome、Firefox、等国际主流浏览器</li>
+          <li>360浏览器、遨游浏览器、等国内主流浏览器的急速模式</li>
+        </ul>
+        <div class="browser-check-close">我知道了，不再提示</div>
+      </div>
+    </div>
+  </div>
+  <!-- 浏览器兼容性提示--结束 -->
+          <!--页脚 结束-->
+          <!--<div class="scoll-ad" id="scoll-ad" style="display:block;position:fixed;z-index:2100;top:210px;right:30px;">
+            <iframe src="http://tqyb.com.cn/gzhuanti/189.html" width="140" height="282" frameborder="0"></iframe>
+            <div class="b-box" style="height:20px;background-color: #FFF;">
+              <div class="close" onclick="document.getElementById('scoll-ad').style.display='none'">关闭</div>
+            </div>
+          </div>-->
+          <!--轮播飘窗 开始-->
+          <!--
+<div id="wave_wrapper">
+	<i id="close_wave">关闭</i>
+	<a href="http://www.tqyb.com.cn/gz/science/consult/2021-08-13/8997.html" id="wave" >
+		<ul class="ul_wrapper" id="ul_wrapper">
+			<li class="banner_li"><img class="banner_img" src="/designs/images/gzWaveWindow/汛期-竖版.png" alt="汛期-竖版"></li>
+			<li class="banner_li"><img class="banner_img" src="/designs/images/gzWaveWindow/汛期-竖版2.png" alt="汛期-竖版2"></li>
+			<li class="banner_li"><img class="banner_img" src="/designs/images/gzWaveWindow/高温作业.png" alt="高温作业"></li>
+		</ul>
+		<div class="inner_wrapper" id="inner_wrapper">
+			<span class="inner_roll inner_roll_active"></span>
+			<span class="inner_roll"></span>
+			<span class="inner_roll"></span>
+		</div>
+	</a>
+</div>
+-->
+          <!--轮播飘窗 结束-->
+
+
+          
+            <div id="pc"
+              style="display:none; width:180px;height:220px;position:absolute; top:0px;left:0px;z-index:20001" ;
+              datatime="">
+            <div class="close" style="width:180px;height:20px;text-align: right;"
+              onclick="document.getElementById('pc').style.display='none'">关闭</div>
+            <a href="http://www.tqyb.com.cn/gz/weatherLive/tqgc/2022-07-05/10603.html" style="display:block;">
+              <div
+                style="width:180px;background:url('/designs/images/pcbc.png') center no-repeat ;border-radius:5px;color:#fff; font-size:20px; line-height:40px">
+                <span style="margin:10px">2022年7月2-4日台风“暹芭”影响天气过程</span>
+              </div>
+            </a>
+            </div>
+          
+
+          <script type="text/javascript">
+            var wrapperDOM = document.getElementById('wave_wrapper')
+            var closeDOM = document.getElementById('close_wave')
+            closeDOM.addEventListener('click', function () {
+              wrapperDOM.style.display = 'none'
+            })
+
+            var waveBoxDOM = document.getElementById('wave')
+            // 轮播图：
+            var ulWrapper = document.getElementById('ul_wrapper')
+            var lis = ulWrapper.getElementsByClassName('banner_li')
+            var innerBox = document.getElementById('inner_wrapper')
+            var rolls = innerBox.getElementsByClassName('inner_roll')
+            var size = waveBoxDOM.clientWidth
+            var currentIndex = 0
+            var lock = true
+
+            // 设置ul的宽度：
+            ulWrapper.style.width = size * (lis.length + 1) + 'px'
+
+            // 遍历小圆点，给他们添加自定义属性和事件：
+            for (var i = 0; i < rolls.length; i++) {
+              rolls[i].setAttribute('index', i)
+              rolls[i].onmouseenter = function () {
+                // 先遍历取消所有的类样式：
+                if (lock) {
+                  for (var j = 0; j < rolls.length; j++) {
+                    rolls[j].className = 'inner_roll'
+                  }
+                  // 给当前的roll添加激活样式：
+                  this.className = 'inner_roll inner_roll_active'
+
+                  // 移动：
+                  const index = this.getAttribute('index')
+                  if (currentIndex !== index) {
+                    currentIndex = index
+                    animate(ulWrapper, -currentIndex * size) // 因为图片是向左移动，所以都是负的
+                  }
+                }
+              }
+            }
+
+            // clone第一张图片，并把它追加到末尾：
+            var imgCloneDom = lis[0].cloneNode(true)
+            ulWrapper.appendChild(imgCloneDom)
+
+            // 滑动到下一张图片的事件：
+            function nextImg () {
+              // 判断是否滑动到最后一张了，如果是，则立即跳转到第一张
+              if (currentIndex >= lis.length - 1) {
+                currentIndex = 0
+                ulWrapper.style.left = 0
+              }
+              currentIndex++
+              // 滑动
+              animate(ulWrapper, -currentIndex * size)
+
+              // 遍历取消所有的小圆点样式：
+              for (var i = 0; i < rolls.length; i++) {
+                rolls[i].className = 'inner_roll'
+              }
+              // 如果滑动后是最后一张，则让第一个圆点激活：
+              if (currentIndex >= lis.length - 1) {
+                rolls[0].className = 'inner_roll inner_roll_active'
+              } else {
+                rolls[currentIndex].className = 'inner_roll inner_roll_active'
+              }
+            }
+
+            // 自动滑动：每隔间隔时间调用一次左滑事件：
+            var timeId = setInterval(nextImg, 5000)
+
+            function animate (domObj, target) {
+              if (lock) {
+                lock = false
+                // 获取dom对象当前的偏移量：
+                var location = domObj.offsetLeft
+                console.log(location, target)
+                // 步数：
+                var step = 0
+                clearInterval(timer)
+                var timer = setInterval(() => {
+                  step = (target - location) / 10
+                  step = step > 0 ? Math.ceil(step) : Math.floor(step)
+                  location += step
+                  domObj.style.left = location + 'px'
+                  if (step === 0) {
+                    domObj.style.left = target + 'px'
+                    clearInterval(timer)
+                    lock = true
+                  }
+                }, 10)
+              }
+            }
+
+
+            // 飘窗移动对象：
+            // var moveObj = {
+            // 	boxDom: waveBoxDOM, // dom对象
+            // 	waitTime: 15, // 定时器间隔时间
+            // 	x: 0, // 移动后的位置
+            // 	y: 0, // 移动后的位置
+            // 	step: 2, // 每次移动像素
+            // 	reverseX: false, // 是否负向移动X
+            // 	reverseY: false, // 是否负向移动Y
+            // 	maxX: window.innerWidth - waveBoxDOM.offsetWidth, // x轴的最大移动距离
+            // 	maxY: window.innerHeight - waveBoxDOM.offsetHeight, // y轴的最大移动距离
+            // 	timeIntervalId: null,
+            // 	move: function () {
+            // 		// 移动：
+            // 		this.boxDom.style.left = this.x + 'px'
+            // 		this.boxDom.style.top = this.y + 'px'
+            //
+            // 		// 计算下次x轴移动的位置：
+            // 		this.x += this.reverseX ? -this.step : this.step
+            // 		// 判断下次移动的方向：
+            // 		if (this.x > this.maxX) {
+            // 			this.reverseX = true
+            // 		} else if (this.x < 0) {
+            // 			this.reverseX = false
+            // 		}
+            //
+            // 		// 计算下次y轴移动的位置：
+            // 		this.y += this.reverseY ? -this.step : this.step
+            // 		// 判断下次移动方向：
+            // 		if (this.y > this.maxY) {
+            // 			this.reverseY = true
+            // 		} else if (this.y < 0) {
+            // 			this.reverseY = false
+            // 		}
+            // 	}
+            // }
+            // 飘窗移动：
+            // moveObj.timeIntervalId = setInterval("moveObj.move()", moveObj.waitTime)
+
+            // 公共的鼠标进入离开事件：
+            waveBoxDOM.addEventListener('mouseenter', function () {
+              // clearInterval(moveObj.timeIntervalId)
+              clearInterval(timeId)
+            })
+            waveBoxDOM.addEventListener('mouseleave', function () {
+              // moveObj.timeIntervalId = setInterval('moveObj.move()', moveObj.waitTime)
+              clearInterval(timeId)
+              timeId = setInterval(nextImg, 5000)
+            })
+
+          </script>
+
+          <script type="text/javascript">
+            var nowDate = new Date();
+            var floatDivObj = document.getElementById('pc');
+            var adStr = floatDivObj.getAttribute("datatime").split(/[-\s]/);
+            var artileDate = new Date(Number(adStr[0]), Number(adStr[1]) - 1, Number(adStr[2]), Number(adStr[3]));
+            if ((new Date().getTime() - artileDate.getTime()) < 24 * 3600000) {
+              floatDivObj.style["display"] = "block";
+              var a1a = setInterval(moves, 50);
+              var intervalX = 1;
+              var intervalY = 1;
+              var posX = 0;
+              var posY = 0;
+              var interval = 1;
+              function moves () {
+                posX += (interval * intervalX);
+                posY += (interval * intervalY);
+
+                $("#pc").css("top", posY);
+                $("#pc").css("left", posX);
+                if (posX < 1 || posX + floatDivObj.offsetWidth > $(window).width()) {
+                  intervalX = -intervalX;
+                }
+                if (posY < 1 || posY + floatDivObj.offsetHeight + 5 > $(window).height()) {
+                  intervalY = -intervalY;
+                }
+              }
+              floatDivObj.onmouseover = function () {
+                clearInterval(a1a);
+              }
+              floatDivObj.onmouseout = function () {
+                a1a = setInterval(moves, 50);
+              }
+            }
+
+          </script>
+
+  </body>
+
+  </html>
