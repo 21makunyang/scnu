@@ -202,8 +202,8 @@ int main()
     list.insert(4);
     list.insert(6);
     list.show();
-    // list.reverse();
-    // list.show();
+    list.reverse();
+    list.show();
     list.deleteInterval(2, 5);
     list.show();
 }
