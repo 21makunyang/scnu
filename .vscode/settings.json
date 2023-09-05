@@ -24,6 +24,7 @@
         "forward_list": "cpp",
         "list": "cpp",
         "string": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "variant": "c"
     }
 }
