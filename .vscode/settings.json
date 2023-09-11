@@ -25,6 +25,7 @@
         "list": "cpp",
         "string": "cpp",
         "cmath": "cpp",
-        "variant": "c"
+        "variant": "c",
+        "course_schedule,cpp": "cpp"
     }
 }
